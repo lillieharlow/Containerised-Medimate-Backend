@@ -10,7 +10,7 @@ const createError = require('../utils/httpError');
 
 const authorizeUserTypes =
   (...allowedTypes) =>
-  async (request, response, next) => {
+  async (request, next) => {
     try {
       const user = await User.findById(request.user.userId).populate('userType');
 

@@ -16,7 +16,7 @@ const errorStatusMap = {
   MongoNetworkError: 503,
 };
 
-const globalErrorHandler = (error, request, response, next) => {
+const globalErrorHandler = (error, response, next) => {
   if (response.headersSent) {
     return next(error);
   }
