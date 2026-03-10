@@ -7,7 +7,7 @@
     "start": "node --env-file-if-exists=.env src/server.js",
     "dev": "node --watch --env-file-if-exists=.env src/server.js",
     "lint": "eslint src/**/*.js",
-    "test": "jest --watch"
+    "test": "jest"
   },
   "jest": {
     "testEnvironment": "node",
